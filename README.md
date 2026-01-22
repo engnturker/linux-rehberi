@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐧 Linux Canlı Rehber (Linux Command Guide)
 
-## Getting Started
+Modern, hızlı ve tamamen Türkçe içeriğe sahip, fütüristik bir Linux komut rehberi uygulaması. Bu proje, Linux dünyasına yeni adım atanlar veya terminal komutlarını hızlıca hatırlamak isteyen profesyoneller için tasarlanmış canlı bir web servisidir.
 
-First, run the development server:
+![Linux Canlı Rehber](public/assets/linux_schematic.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Özellikler
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   **🔍 Canlı Komut Araması:** Sadece komut adıyla (cmd) anlık filtreleme.
+-   **🌐 Web Entegrasyonu:** Yerel veri tabanında bulunmayan komutlar için **Ubuntu-TR Wiki** üzerinden canlı veri çekme (scraping).
+-   **🌲 Linux Dizin Yapısı:** Görsel infografikler ve detaylı açıklamalarla Linux dosya sistemi hiyerarşisi sayfası.
+-   **🔄 Ters Komut Mantığı:** Komutların zıtlarını (örn: `mkdir` ↔ `rmdir`) tek tıkla görebilme ve arayabilme.
+-   **🎨 Avant-Garde UI:** Glassmorphism, acid green vurgular, koyu tema ve akıcı Framer Motion animasyonları.
+-   **📱 Mobil Uyumluluk:** Her cihazda kusursuz görünen responsive tasarım.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Teknoloji Yığını
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+-   **Framework:** [Next.js 15 (App Router)](https://nextjs.org/)
+-   **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+-   **Animasyon:** [Framer Motion](https://www.framer.com/motion/)
+-   **İkonlar:** [Lucide React](https://lucide.dev/)
+-   **Veri Kazıma:** [Cheerio](https://cheerio.js.org/)
+-   **Dil:** TypeScript
 
-## Learn More
+## 📂 Dosya Yapısı
 
-To learn more about Next.js, take a look at the following resources:
+-   `app/`: Uygulamanın ana sayfaları ve API rotaları.
+-   `app/dizin-yapisi/`: Linux hiyerarşisini anlatan özel eğitim sayfası.
+-   `app/api/search/`: Canlı web araması yapan backend servisi.
+-   `components/ui/`: Özel tasarım UI bileşenleri (SearchBar, CommandCard vb.).
+-   `data/commands.json`: 200+ komut içeren zengin yerel veri seti.
+-   `public/assets/`: Proje görselleri ve infografikler.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Kurulum ve Çalıştırma
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Projeyi yerel makinenizde çalıştırmak için:
 
-## Deploy on Vercel
+1.  Bağımlılıkları yükleyin:
+    ```bash
+    npm install
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  Geliştirme sunucusunu başlatın:
+    ```bash
+    npm run dev
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  Tarayıcınızda şu adresi açın: `http://localhost:3008`
+
+*Not: Uygulama yerel ağdan erişebilmeniz için `-H 0.0.0.0` parametresiyle yapılandırılmıştır.*
+
+## 🤝 Katkıda Bulunma
+
+Hataları bildirmek veya yeni özellikler önermek için lütfen bir "Issue" açın veya "Pull Request" gönderin.
+
+## 📝 Lisans
+
+Bu proje açık kaynaklıdır ve MIT lisansı altında sunulmaktadır.
+
+---
+**Geliştiren:** [Engin](https://github.com/engnturker) • 2026 London • Avant-Garde Design Protocol
