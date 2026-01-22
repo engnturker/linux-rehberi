@@ -1,0 +1,1472 @@
+[
+    {
+        "cmd": "ls",
+        "desc": "Dizin içeriğini listeler.",
+        "usage": "ls -la",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "cd",
+        "desc": "Dizin değiştirir.",
+        "usage": "cd /var/www",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "pwd",
+        "desc": "Bulunduğunuz dizini gösterir.",
+        "usage": "pwd",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "mkdir",
+        "desc": "Yeni dizin oluşturur.",
+        "usage": "mkdir klasor",
+        "category": "Dosya",
+        "reverse": "rmdir"
+    },
+    {
+        "cmd": "rmdir",
+        "desc": "Boş dizini siler.",
+        "usage": "rmdir klasor",
+        "category": "Dosya",
+        "reverse": "mkdir"
+    },
+    {
+        "cmd": "rm",
+        "desc": "Dosya/dizin siler.",
+        "usage": "rm -rf dosya",
+        "category": "Dosya",
+        "reverse": "touch"
+    },
+    {
+        "cmd": "touch",
+        "desc": "Boş dosya oluşturur.",
+        "usage": "touch dosya.txt",
+        "category": "Dosya",
+        "reverse": "rm"
+    },
+    {
+        "cmd": "cp",
+        "desc": "Dosya kopyalar.",
+        "usage": "cp kynk hdf",
+        "category": "Dosya",
+        "reverse": "rm"
+    },
+    {
+        "cmd": "mv",
+        "desc": "Dosya taşır/adlandırır.",
+        "usage": "mv eski yeni",
+        "category": "Dosya",
+        "reverse": "cp"
+    },
+    {
+        "cmd": "cat",
+        "desc": "Dosya içeriğini basar.",
+        "usage": "cat dosya",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "find",
+        "desc": "Dosya arar.",
+        "usage": "find . -name '*.txt'",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "locate",
+        "desc": "Hızlı dosya arama.",
+        "usage": "locate dosya",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "ln",
+        "desc": "Sembolik bağ oluşturur.",
+        "usage": "ln -s hedef link",
+        "category": "Dosya",
+        "reverse": "unlink"
+    },
+    {
+        "cmd": "unlink",
+        "desc": "Bağlantıyı kaldırır.",
+        "usage": "unlink link",
+        "category": "Dosya",
+        "reverse": "ln"
+    },
+    {
+        "cmd": "tar",
+        "desc": "Arşiv oluşturur/açar.",
+        "usage": "tar -xvf arsiv.tar",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "zip",
+        "desc": "Dosyaları sıkıştırır.",
+        "usage": "zip -r a.zip kl",
+        "category": "Dosya",
+        "reverse": "unzip"
+    },
+    {
+        "cmd": "unzip",
+        "desc": "Zip arşivini açar.",
+        "usage": "unzip a.zip",
+        "category": "Dosya",
+        "reverse": "zip"
+    },
+    {
+        "cmd": "gzip",
+        "desc": "Gzip sıkıştırma yapar.",
+        "usage": "gzip dosya",
+        "category": "Dosya",
+        "reverse": "gunzip"
+    },
+    {
+        "cmd": "gunzip",
+        "desc": "Gzip dosyasını açar.",
+        "usage": "gunzip dosya.gz",
+        "category": "Dosya",
+        "reverse": "gzip"
+    },
+    {
+        "cmd": "mount",
+        "desc": "Disk bağlar.",
+        "usage": "mount /dev/sdb1 /mnt",
+        "category": "Dosya",
+        "reverse": "umount"
+    },
+    {
+        "cmd": "umount",
+        "desc": "Disk bağlantısını keser.",
+        "usage": "umount /mnt",
+        "category": "Dosya",
+        "reverse": "mount"
+    },
+    {
+        "cmd": "stat",
+        "desc": "Dosya bilgilerini gösterir.",
+        "usage": "stat dosya",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "file",
+        "desc": "Dosya tipini belirler.",
+        "usage": "file dosya",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "shred",
+        "desc": "Güvenli dosya silme.",
+        "usage": "shred -u dosya",
+        "category": "Dosya",
+        "reverse": "touch"
+    },
+    {
+        "cmd": "mkfs",
+        "desc": "Dosya sistemi oluşturur.",
+        "usage": "mkfs.ext4 /dev/sdb1",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "fsck",
+        "desc": "Dosya sistemini denetler.",
+        "usage": "fsck /dev/sdb1",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "sync",
+        "desc": "Tamponları diske yazar.",
+        "usage": "sync",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "rename",
+        "desc": "Toplu dosya adlandırma.",
+        "usage": "rename 's/txt/log/' *",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "basename",
+        "desc": "Yol bilgisini temizler.",
+        "usage": "basename /p/t/a.txt",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "dirname",
+        "desc": "Dizin yolunu gösterir.",
+        "usage": "dirname /p/t/a.txt",
+        "category": "Dosya",
+        "reverse": null
+    },
+    {
+        "cmd": "more",
+        "desc": "Metin görüntüleme (basit).",
+        "usage": "more t.txt",
+        "category": "Metin",
+        "reverse": "less"
+    },
+    {
+        "cmd": "less",
+        "desc": "Metin görüntüleme (gelişmiş).",
+        "usage": "less t.txt",
+        "category": "Metin",
+        "reverse": "more"
+    },
+    {
+        "cmd": "head",
+        "desc": "Baştan ilk satırları gösterir.",
+        "usage": "head -n 10 t.txt",
+        "category": "Metin",
+        "reverse": "tail"
+    },
+    {
+        "cmd": "tail",
+        "desc": "Sondan son satırları gösterir.",
+        "usage": "tail -f log.txt",
+        "category": "Metin",
+        "reverse": "head"
+    },
+    {
+        "cmd": "grep",
+        "desc": "Kelime arama/filtreleme.",
+        "usage": "grep 'ara' d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "diff",
+        "desc": "İki dosyayı karşılaştırır.",
+        "usage": "diff d1 d2",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "wc",
+        "desc": "Satır/kelime sayar.",
+        "usage": "wc -l d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "sort",
+        "desc": "Satırları sıralar.",
+        "usage": "sort d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "uniq",
+        "desc": "Tekrar eden satırları eler.",
+        "usage": "uniq d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "cut",
+        "desc": "Sütunları keser.",
+        "usage": "cut -d':' -f1 d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "tr",
+        "desc": "Karakter dönüştürür.",
+        "usage": "tr 'a' 'b' < d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "sed",
+        "desc": "Akış düzenleyici (replace vb).",
+        "usage": "sed 's/a/b/' d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "awk",
+        "desc": "Desen işleme dili.",
+        "usage": "awk '{print $1}' d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "tee",
+        "desc": "Çıkışı hem dosyaya hem ekrana yazar.",
+        "usage": "ls | tee log.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "join",
+        "desc": "Ortak alanlı satırları birleştirir.",
+        "usage": "join d1 d2",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "paste",
+        "desc": "Dosyaları yan yana birleştirir.",
+        "usage": "paste d1 d2",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "comm",
+        "desc": "İki sıralı dosyayı karşılaştırır.",
+        "usage": "comm d1 d2",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "split",
+        "desc": "Dosyayı parçalara böler.",
+        "usage": "split -b 1M d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "patch",
+        "desc": "Diff farklarını uygular.",
+        "usage": "patch d.txt < f.diff",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "expand",
+        "desc": "Tabları boşluk yapar.",
+        "usage": "expand d.txt",
+        "category": "Metin",
+        "reverse": "unexpand"
+    },
+    {
+        "cmd": "unexpand",
+        "desc": "Boşlukları tab yapar.",
+        "usage": "unexpand d.txt",
+        "category": "Metin",
+        "reverse": "expand"
+    },
+    {
+        "cmd": "fold",
+        "desc": "Geniş satırları böler.",
+        "usage": "fold -w 80 d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "fmt",
+        "desc": "Metinleri formatlar.",
+        "usage": "fmt d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "pr",
+        "desc": "Dosyayı baskı için hazırlar.",
+        "usage": "pr d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "nl",
+        "desc": "Satır numarası ekler.",
+        "usage": "nl d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "tac",
+        "desc": "Ters cat (alttan üste).",
+        "usage": "tac d.txt",
+        "category": "Metin",
+        "reverse": "cat"
+    },
+    {
+        "cmd": "rev",
+        "desc": "Satırı sondan başa yazar.",
+        "usage": "rev d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "column",
+        "desc": "Metni sütunlara böler.",
+        "usage": "column -t d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "od",
+        "desc": "Dosyayı octal/hex gösterir.",
+        "usage": "od -c d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "hexdump",
+        "desc": "Dosyayı hex olarak döker.",
+        "usage": "hexdump -C d.txt",
+        "category": "Metin",
+        "reverse": null
+    },
+    {
+        "cmd": "chmod",
+        "desc": "Dosya/dizin izni değiştirir.",
+        "usage": "chmod 755 s.sh",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "chown",
+        "desc": "Sahibi değiştirir.",
+        "usage": "chown u:g d",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "ps",
+        "desc": "İşlemleri gösterir.",
+        "usage": "ps aux",
+        "category": "Sistem",
+        "reverse": "kill"
+    },
+    {
+        "cmd": "kill",
+        "desc": "İşlemi durdurur.",
+        "usage": "kill 1234",
+        "category": "Sistem",
+        "reverse": "ps"
+    },
+    {
+        "cmd": "killall",
+        "desc": "İsme göre tüm işlemleri durdurur.",
+        "usage": "killall chrome",
+        "category": "Sistem",
+        "reverse": "ps"
+    },
+    {
+        "cmd": "bg",
+        "desc": "Arka planda devam ettirir.",
+        "usage": "bg %1",
+        "category": "Sistem",
+        "reverse": "fg"
+    },
+    {
+        "cmd": "fg",
+        "desc": "Ön plana getirir.",
+        "usage": "fg %1",
+        "category": "Sistem",
+        "reverse": "bg"
+    },
+    {
+        "cmd": "top",
+        "desc": "Sistem izleme.",
+        "usage": "top",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "htop",
+        "desc": "İnteraktif sistem izleme.",
+        "usage": "htop",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "free",
+        "desc": "Bellek durumu.",
+        "usage": "free -h",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "uname",
+        "desc": "Sistem bilgisi.",
+        "usage": "uname -a",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "hostname",
+        "desc": "Bilgisayar adı.",
+        "usage": "hostname",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "uptime",
+        "desc": "Çalışma süresi.",
+        "usage": "uptime",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "systemctl",
+        "desc": "Servis yönetimi.",
+        "usage": "systemctl start nginx",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "service",
+        "desc": "Servis yönetimi (eski).",
+        "usage": "service nginx restart",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "journalctl",
+        "desc": "Sistem loglarını gösterir.",
+        "usage": "journalctl -xe",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "dmesg",
+        "desc": "Çekirdek loglarını gösterir.",
+        "usage": "dmesg",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "lscpu",
+        "desc": "İşlemci bilgisini verir.",
+        "usage": "lscpu",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "lsusb",
+        "desc": "USB cihazları listeler.",
+        "usage": "lsusb",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "lspci",
+        "desc": "PCI cihazları listeler.",
+        "usage": "lspci",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "dmidecode",
+        "desc": "Donanım bilgisi (BIOS vb).",
+        "usage": "sudo dmidecode",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "vmstat",
+        "desc": "Sanal bellek istatistiği.",
+        "usage": "vmstat 1",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "iostat",
+        "desc": "Giriş/Çıkış istatistiği.",
+        "usage": "iostat",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "jobs",
+        "desc": "Arka plandaki işleri listeler.",
+        "usage": "jobs",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "nice",
+        "desc": "Öncelik belirleyerek başlatır.",
+        "usage": "nice -n 10 komut",
+        "category": "Sistem",
+        "reverse": "renice"
+    },
+    {
+        "cmd": "renice",
+        "desc": "Çalışan işlemin önceliğini değiştirir.",
+        "usage": "renice 5 -p 1234",
+        "category": "Sistem",
+        "reverse": "nice"
+    },
+    {
+        "cmd": "nohup",
+        "desc": "Sinyalden koruyarak çalıştırır.",
+        "usage": "nohup komut &",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "screen",
+        "desc": "Terminal çoklayıcı.",
+        "usage": "screen",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "tmux",
+        "desc": "Gelişmiş terminal çoklayıcı.",
+        "usage": "tmux",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "dd",
+        "desc": "Blok seviyesi kopyalama.",
+        "usage": "dd if=iso of=/dev/sdX",
+        "category": "Sistem",
+        "reverse": null
+    },
+    {
+        "cmd": "ping",
+        "desc": "Bağlantı testi.",
+        "usage": "ping 8.8.8.8",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "ssh",
+        "desc": "Güvenli bağlantı.",
+        "usage": "ssh u@h",
+        "category": "Ağ",
+        "reverse": "exit"
+    },
+    {
+        "cmd": "scp",
+        "desc": "Güvenli dosya kopyalama.",
+        "usage": "scp d u@h:/p",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "rsync",
+        "desc": "Dosya senkronizasyonu.",
+        "usage": "rsync -av z h:/p",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "ip",
+        "desc": "Ağ yapılandırma.",
+        "usage": "ip addr",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "ifconfig",
+        "desc": "Ağ yapılandırma (eski).",
+        "usage": "ifconfig",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "netstat",
+        "desc": "Ağ istatistikleri.",
+        "usage": "netstat -tuln",
+        "category": "Ağ",
+        "reverse": "ss"
+    },
+    {
+        "cmd": "ss",
+        "desc": "Soket istatistikleri.",
+        "usage": "ss -tulpn",
+        "category": "Ağ",
+        "reverse": "netstat"
+    },
+    {
+        "cmd": "route",
+        "desc": "Yönlendirme tablosu.",
+        "usage": "route -n",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "traceroute",
+        "desc": "Paket yolunu izler.",
+        "usage": "traceroute google.com",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "mtr",
+        "desc": "Gelişmiş traceroute.",
+        "usage": "mtr google.com",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "dig",
+        "desc": "DNS sorgulama.",
+        "usage": "dig google.com",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "nslookup",
+        "desc": "DNS sorgulama (basit).",
+        "usage": "nslookup google.com",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "host",
+        "desc": "İsimden IP bulma.",
+        "usage": "host google.com",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "curl",
+        "desc": "URL üzerinden transfer.",
+        "usage": "curl -O URL",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "wget",
+        "desc": "Dosya indirme.",
+        "usage": "wget URL",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "telnet",
+        "desc": "Telnet protokolü.",
+        "usage": "telnet host port",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "nc",
+        "desc": "Netcat ağ işviçresi.",
+        "usage": "nc -lvp 4444",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "tcpdump",
+        "desc": "Paket analizi.",
+        "usage": "tcpdump -i eth0",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "nmap",
+        "desc": "Ağ tarama/güvenlik.",
+        "usage": "nmap -sV host",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "iptables",
+        "desc": "Güvenlik duvarı yönetimi.",
+        "usage": "iptables -L",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "ufw",
+        "desc": "Basit güvenlik duvarı (Ubuntu).",
+        "usage": "ufw enable",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "firewalld",
+        "desc": "Dinamik güvenlik duvarı (CentOS).",
+        "usage": "firewall-cmd --list-all",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "nmcli",
+        "desc": "NetworkManager CLI.",
+        "usage": "nmcli dev status",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "nmtui",
+        "desc": "NetworkManager TUI.",
+        "usage": "nmtui",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "hostnamectl",
+        "desc": "Host adını kontrol eder.",
+        "usage": "hostnamectl status",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "iwconfig",
+        "desc": "Kablosuz ağ ayarı.",
+        "usage": "iwconfig",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "iw",
+        "desc": "Modern kablosuz ağ ayarı.",
+        "usage": "iw dev",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "whois",
+        "desc": "Whois sorgusu.",
+        "usage": "whois google.com",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "ftp",
+        "desc": "FTP bağlantısı.",
+        "usage": "ftp host",
+        "category": "Ağ",
+        "reverse": null
+    },
+    {
+        "cmd": "whoami",
+        "desc": "Ben kimim?",
+        "usage": "whoami",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "passwd",
+        "desc": "Şifre değiştirir.",
+        "usage": "passwd",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "useradd",
+        "desc": "Kullanıcı ekler.",
+        "usage": "useradd kadi",
+        "category": "Kullanıcı",
+        "reverse": "userdel"
+    },
+    {
+        "cmd": "userdel",
+        "desc": "Kullanıcı siler.",
+        "usage": "userdel kadi",
+        "category": "Kullanıcı",
+        "reverse": "useradd"
+    },
+    {
+        "cmd": "usermod",
+        "desc": "Kullanıcıyı düzenler.",
+        "usage": "usermod -aG grup k",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "groupadd",
+        "desc": "Grup ekler.",
+        "usage": "groupadd gadi",
+        "category": "Kullanıcı",
+        "reverse": "groupdel"
+    },
+    {
+        "cmd": "groupdel",
+        "desc": "Grup siler.",
+        "usage": "groupdel gadi",
+        "category": "Kullanıcı",
+        "reverse": "groupadd"
+    },
+    {
+        "cmd": "groupmod",
+        "desc": "Grubu düzenler.",
+        "usage": "groupmod -n yeni eski",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "who",
+        "desc": "Kimler bağlandığını gösterir.",
+        "usage": "who",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "w",
+        "desc": "Kullanıcı faaliyetlerini gösterir.",
+        "usage": "w",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "last",
+        "desc": "Son girişleri listeler.",
+        "usage": "last",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "id",
+        "desc": "Kullanıcı ve grup IDslerini gösterir.",
+        "usage": "id",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "su",
+        "desc": "Kullanıcı değiştirir.",
+        "usage": "su - kullanici",
+        "category": "Kullanıcı",
+        "reverse": "exit"
+    },
+    {
+        "cmd": "sudo",
+        "desc": "Yönetici yetkisi ile çalıştırır.",
+        "usage": "sudo komut",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "visudo",
+        "desc": "Sudoers dosyasını düzenler.",
+        "usage": "sudo visudo",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "logname",
+        "desc": "Giriş adını gösterir.",
+        "usage": "logname",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "users",
+        "desc": "Bağlı kullanıcıları listeler.",
+        "usage": "users",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "groups",
+        "desc": "Dahil olduğu grupları gösterir.",
+        "usage": "groups",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "finger",
+        "desc": "Kullanıcı bilgisi verir.",
+        "usage": "finger kadi",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "chage",
+        "desc": "Şifre zaman aşımı ayarı.",
+        "usage": "chage -l kadi",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "adduser",
+        "desc": "Kullanıcı ekler (interaktif).",
+        "usage": "adduser kadi",
+        "category": "Kullanıcı",
+        "reverse": "deluser"
+    },
+    {
+        "cmd": "deluser",
+        "desc": "Kullanıcıyı siler (Debian/Ubuntu).",
+        "usage": "deluser kadi",
+        "category": "Kullanıcı",
+        "reverse": "adduser"
+    },
+    {
+        "cmd": "addgroup",
+        "desc": "Grup ekler (interaktif).",
+        "usage": "addgroup gadi",
+        "category": "Kullanıcı",
+        "reverse": "delgroup"
+    },
+    {
+        "cmd": "delgroup",
+        "desc": "Grup siler.",
+        "usage": "delgroup gadi",
+        "category": "Kullanıcı",
+        "reverse": "addgroup"
+    },
+    {
+        "cmd": "quota",
+        "desc": "Disk kotasını gösterir.",
+        "usage": "quota -u kadi",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "edquota",
+        "desc": "Kota ayarlarını düzenler.",
+        "usage": "edquota -u kadi",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "repquota",
+        "desc": "Kota raporu oluşturur.",
+        "usage": "repquota -a",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "getent",
+        "desc": "Sistem veritabanını sorgular.",
+        "usage": "getent passwd kadi",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "newgrp",
+        "desc": "Geçerli grubu değiştirir.",
+        "usage": "newgrp grup",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "umask",
+        "desc": "Varsayılan dosya izni maskesi.",
+        "usage": "umask 022",
+        "category": "Kullanıcı",
+        "reverse": null
+    },
+    {
+        "cmd": "nano",
+        "desc": "Kullanıcı dostu editör.",
+        "usage": "nano d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "vim",
+        "desc": "Profesyonel modlu editör.",
+        "usage": "vim d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "vi",
+        "desc": "Vim'in atası.",
+        "usage": "vi d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "emacs",
+        "desc": "İşletim sistemi kadar güçlü editör.",
+        "usage": "emacs d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "joe",
+        "desc": "Joe'nun Own Editor'ü.",
+        "usage": "joe d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "mcedit",
+        "desc": "MC'nin iç düzenleyicisi.",
+        "usage": "mcedit d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "leafpad",
+        "desc": "Hafif grafiksel editör.",
+        "usage": "leafpad d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "gedit",
+        "desc": "GNOME varsayılan editörü.",
+        "usage": "gedit d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "kwrite",
+        "desc": "KDE hafif editörü.",
+        "usage": "kwrite d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "kate",
+        "desc": "KDE gelişmiş editörü.",
+        "usage": "kate d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "code",
+        "desc": "VS Code CLI.",
+        "usage": "code .",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "atom",
+        "desc": "Atom editör CLI.",
+        "usage": "atom .",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "micro",
+        "desc": "Modern terminal editörü.",
+        "usage": "micro d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "pico",
+        "desc": "Nano'nun atası.",
+        "usage": "pico d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "neovim",
+        "desc": "Gelişmiş vim.",
+        "usage": "nvim d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "ed",
+        "desc": "Orijinal satır editörü.",
+        "usage": "ed d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "ex",
+        "desc": "Vim'in komut modu editörü.",
+        "usage": "ex d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "jed",
+        "desc": "Hızlı, küçük editör.",
+        "usage": "jed d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "mg",
+        "desc": "Emacs benzeri hafif editör.",
+        "usage": "mg d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "vile",
+        "desc": "Vi-like-emacs.",
+        "usage": "vile d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "elvis",
+        "desc": "Bir diğer vi klonu.",
+        "usage": "elvis d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "nvi",
+        "desc": "Yeni vi klonu.",
+        "usage": "nvi d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "vigor",
+        "desc": "Clippy'li vi klonu.",
+        "usage": "vigor d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "vi-tiny",
+        "desc": "En küçük vi sürümü.",
+        "usage": "vi-tiny d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "bvi",
+        "desc": "Binary vi editör.",
+        "usage": "bvi d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "hexedit",
+        "desc": "Hexadecimal editör.",
+        "usage": "hexedit d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "tpx",
+        "desc": "Doku işlemeyen editör.",
+        "usage": "tpx d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "subl",
+        "desc": "Sublime Text CLI.",
+        "usage": "subl d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "xe",
+        "desc": "X editörü.",
+        "usage": "xe d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "se",
+        "desc": "Simple editor.",
+        "usage": "se d.txt",
+        "category": "Editör",
+        "reverse": null
+    },
+    {
+        "cmd": "man",
+        "desc": "Kılavuz sayfasını açar.",
+        "usage": "man ls",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "info",
+        "desc": "Bilgi sayfası.",
+        "usage": "info coreutils",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "apropos",
+        "desc": "Kılavuz sayfalarında arar.",
+        "usage": "apropos network",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "whatis",
+        "desc": "Tek satırlık açıklama verir.",
+        "usage": "whatis ls",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "help",
+        "desc": "Kabuk gömülü komut yardımı.",
+        "usage": "help cd",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "type",
+        "desc": "Komut türünü belirler.",
+        "usage": "type ls",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "which",
+        "desc": "Yürütülebilir dosya yolu.",
+        "usage": "which python",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "mandb",
+        "desc": "Man veritabanını günceller.",
+        "usage": "sudo mandb",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "xman",
+        "desc": "X Window man sayfası.",
+        "usage": "xman",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "yelp",
+        "desc": "GNOME yardım görüntüleyici.",
+        "usage": "yelp",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "pinfo",
+        "desc": "Gelişmiş info okuyucu.",
+        "usage": "pinfo ls",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "tkinfo",
+        "desc": "Tcl/Tk info görüntüleyici.",
+        "usage": "tkinfo",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "tkman",
+        "desc": "Tcl/Tk man görüntüleyici.",
+        "usage": "tkman",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "manpath",
+        "desc": "Man sayfaları yolunu gösterir.",
+        "usage": "manpath",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "groff",
+        "desc": "Doküman formatlama sistemi.",
+        "usage": "groff -man ls.1",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "nroff",
+        "desc": "Basit doküman formatlayıcı.",
+        "usage": "nroff -man ls.1",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "col",
+        "desc": "Girişi sütunlara döker.",
+        "usage": "man ls | col -b",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "colcrt",
+        "desc": "CRT için col filtresi.",
+        "usage": "colcrt d.txt",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "zman",
+        "desc": "Sıkıştırılmış man oku.",
+        "usage": "zman ls",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "bzman",
+        "desc": "Bzip2 man oku.",
+        "usage": "bzman ls",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "lzman",
+        "desc": "Lzma man oku.",
+        "usage": "lzman ls",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "xzman",
+        "desc": "Xz man oku.",
+        "usage": "xzman ls",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "alias",
+        "desc": "Takma isim listesi.",
+        "usage": "alias",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "export",
+        "desc": "Ortam değişkenlerini listeler.",
+        "usage": "export -p",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "env",
+        "desc": "Ortam değişkenlerini listeler.",
+        "usage": "env",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "set",
+        "desc": "Kabuk değişkenlerini listeler.",
+        "usage": "set",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "history",
+        "desc": "Geçmiş komut listesi.",
+        "usage": "history",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "exit",
+        "desc": "Oturumdan çıkış.",
+        "usage": "exit",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "catman",
+        "desc": "Önceden formatlanmış man üretir.",
+        "usage": "catman",
+        "category": "Yardım",
+        "reverse": null
+    },
+    {
+        "cmd": "man-recode",
+        "desc": "Man sayfalarını yeniden kodlar.",
+        "usage": "man-recode utf8 ls.1",
+        "category": "Yardım",
+        "reverse": null
+    }
+]
