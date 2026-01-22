@@ -4,7 +4,8 @@ Modern, hızlı ve tamamen Türkçe içeriğe sahip, fütüristik bir Linux komu
 
 ![Linux Canlı Rehber](public/assets/webui.png)
 
-(public/assets/webui2.png)
+![Linux Canlı Rehber](public/assets/webui2.png)
+
 
 ## 🚀 Özellikler
 
