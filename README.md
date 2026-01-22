@@ -49,13 +49,3 @@ Projeyi yerel makinenizde çalıştırmak için:
 
 *Not: Uygulama yerel ağdan erişebilmeniz için `-H 0.0.0.0` parametresiyle yapılandırılmıştır.*
 
-## 🤝 Katkıda Bulunma
-
-Hataları bildirmek veya yeni özellikler önermek için lütfen bir "Issue" açın veya "Pull Request" gönderin.
-
-## 📝 Lisans
-
-Bu proje açık kaynaklıdır ve MIT lisansı altında sunulmaktadır.
-
----
-**Geliştiren:** [Engin](https://github.com/engnturker) • 2026 London • Avant-Garde Design Protocol
