@@ -2,7 +2,7 @@
 
 Modern, hızlı ve tamamen Türkçe içeriğe sahip, fütüristik bir Linux komut rehberi uygulaması. Bu proje, Linux dünyasına yeni adım atanlar veya terminal komutlarını hızlıca hatırlamak isteyen profesyoneller için tasarlanmış canlı bir web servisidir.
 
-![Linux Canlı Rehber](public/assets/linux_schematic.png)
+![Linux Canlı Rehber](public/assets/webui.png)
 
 ## 🚀 Özellikler
 
